@@ -1,0 +1,23 @@
+<!--Create a button, when you click on the button some portion of the paragraph should
+be updated-->
+<!doctype>
+<html>
+	<head>
+		<title>Button</title>
+		<script>
+			function changetext(){
+				document.getElementById("class").innerHTML="Google was founded in September 1998 by Larry Page and Sergey Brin while they were Ph.D. students at Stanford University";
+			}
+		</script>
+	</head>
+	<body>
+		<p>
+		Google LLC is an American multinational technology company that specializes in Internet-related 
+		services and products, which include online advertising technologies, a search engine, cloud co
+		mputing, software, and hardware. It is considered one of the five Big Tech companies along with 
+		Amazon, Facebook, Apple, and Microsoft.
+		</p>
+		<p id="class"></p>
+		<button type="button" onclick="changetext()">Change text</button>
+	</body>
+</html>
