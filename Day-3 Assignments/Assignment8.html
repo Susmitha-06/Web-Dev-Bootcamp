@@ -1,0 +1,36 @@
+<!--Create an input that reads from the data list through the select 
+tag and display the data in the paragraph tag of HTML-->
+<!DOCTYPE html>
+ <html> 
+	 <head> 
+		<title>HTML select Tag</title> 
+	 </head>
+	 <body> 
+		 <h2>Example of select tag</h2>
+			 <form> 
+				 <label>Choose your Favorite city in India</label>
+				 <select id="choose"> 
+				 <option>New Delhi</option>
+				 <option>Indore</option>
+				 <option>Indore</option>
+				 <option>Jaipur</option> 
+				 <option>Jodhpur</option>
+				 <option>Chandigarh</option> 
+				 <option>Mumbai</option>
+				 <option>Bengaluru</option>
+				 <option>Lucknow</option> 
+				 <option>Amritsar</option> 
+				</select></br></br>
+				<button type="button" onclick="read()">Submit</button>
+				<p id="result"></p>
+		 </form> 
+		 <script>
+			function read(){
+				var option=document.getElementById("choose").value;
+				
+				document.getElementById("result").innerHTML=option;
+			}
+		 </script>
+	 </body> 
+ </html>
+ 
